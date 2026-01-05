@@ -1,0 +1,23 @@
+# 应用服务 WEB 访问端口
+server.port: 8080
+
+# camunda登录信息配置
+camunda.bpm:
+  # 将创建名为“admin”的管理员用户，并指定密码和名字。
+  admin-user:
+    id: admin
+    password: 123456
+    firstName: Demo
+  # 将为任务列表创建一个名为“All tasks”的默认筛选器
+  filter:
+    create: All tasks
+
+spring:
+  datasource:
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/camunda
+    username: test
+    password: PassW0@d
+
+
